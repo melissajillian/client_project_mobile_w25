@@ -73,6 +73,8 @@ header {
 
 .active{
     display: block;
+    text-decoration: underline;
+    color: #FFCB05;
     font-weight: bolder;
 }
 
