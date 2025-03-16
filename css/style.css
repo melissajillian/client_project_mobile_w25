@@ -173,7 +173,7 @@ header {
 .quick-links{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    justify-items: start;
     align-items: center;
     font-size: 0.6em;
     border: #00274C solid 2px;
@@ -332,10 +332,11 @@ figcaption {
 }
 
 .site-footer a {
-    color: #FFCB05;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .site-footer a:hover {
     text-decoration: underline;
+    font-weight: bold;
 }
