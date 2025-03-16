@@ -73,8 +73,6 @@ header {
 
 .active{
     display: block;
-    text-decoration: underline;
-    color: #FFCB05;
     font-weight: bolder;
 }
 
@@ -334,7 +332,7 @@ figcaption {
 }
 
 .site-footer a {
-    color: #ffffff;
+    color: #FFCB05;
     text-decoration: none;
 }
 
