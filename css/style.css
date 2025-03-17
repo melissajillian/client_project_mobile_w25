@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+/* default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +14,12 @@ body {
     margin-top: 50px; /* Adjust for header */
 }
 
-/* Header styles */
+/* Header styling */
 header {
-    display: grid;
+    display: grid; /* the header is a grid */
     grid-template-columns: 1fr;
-    background-color: #00274C;
-    color: #ffffff;
+    background-color: #00274C; /* UM blue */
+    color: #ffffff; /* text color */
     text-align: center;
     padding: 20px;
     align-items: center;
@@ -31,21 +31,23 @@ header {
     grid-template-columns: 1fr;
     align-items: center;
     gap: 10px;
-    width: 100%;
+    width: 100%;/* takes up full available width of its parent element */
 }
 
+/* Logo styling */
 .logo {
-    display: block;
+    display: block; /* visible */
     visibility: visible;
     z-index: 9999;
-    min-width: 100px;
+    min-width: 100px; /* won't get any smaller than this */
     height: auto;
 }
 
+/* navigation styling */
 .navgation {
     display: block;
     text-align: center;
-    width: 100%;
+    width: 100%; /* takes up full available width of its parent element */
 }
 
 .nav-links {
@@ -63,20 +65,22 @@ header {
     display: block;
     color: #ffffff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 22px; /* sized for readability */
     padding: 10px 0;
 }
 
+/* when the link is hovered over, this is what it will look like */
 .nav-links a:hover {
     text-decoration: underline;
 }
 
+/* when the link is active, this is what it will look like */
 .active{
     display: block;
     font-weight: bolder;
 }
 
-/* all for the hamburger menu I tried */
+/* all for the hamburger menu styling I tried */
 /* .hamburger {
     display: block;
     cursor: pointer;
@@ -102,11 +106,13 @@ header {
     opacity: 0.7;
 }  */
 
+/* page title styling */
 .page-title {
-    font-size: 2.5em;
+    font-size: 2.5em; /* sized for readability */
     margin-top: 10px;
 }
 
+/* skip menu styling so that it is not visible */
 .skip-link {
     position: absolute;
     top: -10000px;
@@ -116,14 +122,16 @@ header {
     text-decoration: none;
 }
 
+/* only visible when pressing tab, then it gets into position */
 .skip-link:focus {
     top: 0;
 }
 
+/* for quick and resource links styling */
 .quick-links, .resource-links {
     margin: 20px 0;
-    font-size: 1em;
-    list-style: none;
+    font-size: 1em; /* sized for readability */
+    list-style: none; /* no styling when just viewing */
 }
 
 .quick-links li, .resource-links li {
@@ -135,51 +143,55 @@ header {
 .resource-links a {
     text-decoration: none;
 }
-
+ /* when mouse hovers over, there is an underline */
 .resource-links a:hover {
     text-decoration: underline;
 }
 
+/* advising image styling */
 .advising-images{
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* image can only get this big */
     margin: 0 auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 8px; /* curved corners */
 }
 
+/* advising link styling */
 .advising-links a{
     text-decoration: none;
 }
 
+/* when mouse hovers over these links, they are underlined */
 .advising-links a:hover{
     text-decoration: underline;
 }
 
 .advising-links{
-    list-style: none;
-    display: grid;
+    list-style: none; /* no styling when viewing page */
+    display: grid; /* links put in a grid */
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-content: center;
     align-items: center;
-    font-size: 0.6em;
-    border: #00274C solid 2px;
-    border-radius: 1em;
+    font-size: 0.6em; /* sized for readability */
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px;
     gap: 10px;
     padding: 10px;
 }
 
+/* quick links styling */
 .quick-links{
-    display: grid;
+    display: grid; /* they are in a grid */
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-items: center;
-    font-size: 0.6em;
-    border: #00274C solid 2px;
-    border-radius: 1em;
+    font-size: 0.6em; /* sized for readability */
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px; /* curved corners */
     padding: 10px; /* padding around box */
-    width: 100%; /* full width of screen */
+    width: 100%; /* takes up full available width of its parent element */
 }
 
 .quick-links a{
@@ -190,6 +202,7 @@ header {
     text-decoration: underline;
 }
 
+/* other resources link styling */
 .other-resources-links{
     list-style: none;
 }
@@ -198,19 +211,21 @@ header {
     text-decoration: none;
 }
 
+/* when hovered over them, they are underlined */
 .other-resources-links a:hover{
     text-decoration: underline;
 }
 
+/* our services links styling */
 .our-services-links{
-    display: grid;
+    display: grid; /* they are in a grid */
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-items: center;
     list-style: none;
     gap: 10px;
-    border: #00274C solid 2px;
-    border-radius: 1em;
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px; /* curved corners */
     padding: 10px; /* padding around box */
 }
 
@@ -218,124 +233,134 @@ header {
     text-decoration: none;
 }
 
+/* when hovered over, they are underlined */
 .our-services-links a:hover{
     text-decoration: underline;
 }
 
 /* CAPS Image Styling */
 .caps-image {
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
     margin: 0 auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 8px; /* curved corners */
 }
 
 .caps_furniture{
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
     margin: 0 auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 8px; /* curved corners */
 }
 
 .advising-image{
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* takes up full available width of its parent element */
+    max-width: 500px; /* can only get this big */
     margin: 0 auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 8px; /* how curved the border is */
 }
 
 /* Main content */
 main {
-    max-width: 100%;
+    max-width: 100%; /* takes up full available width of its parent element */
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     background-color: white;
 }
 
+/* section styling */
 section {
     margin-bottom: 30px;
 }
 
 .section-title {
-    color: #00274d;
+    color: #00274d; /* blue = on brand */
     font-size: 1.3em; /* readability */
-    border-bottom: 3px solid #FFCB05; /* U-M maize */
+    border-bottom: 3px solid #FFCB05; /* U-M maize = on brand */
     padding: 8px;
     margin-bottom: 15px;
 }
 
+/* h3 styling */
 h3 {
     color: #003b5c; /* Darker blue for subheadings */
     font-size: 0.8em; /* Slightly larger font size for readability */
     margin-top: 15px;
 }
 
+/* paragraph styling */
 p {
-    font-size: 0.7em; /* readability */
+    font-size: 0.7em; /* sized for readability */
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+/* unordered list styling */
 ul {
     list-style-type: disc;
     margin-left: 20px;
-    font-size: 0.6em;
+    font-size: 0.6em; /* sized for readability */
 }
 
+/* resource list styling */
 .resource-list{
-    list-style: none;
-    font-size: 0.6em;
-    display: grid;
+    list-style: none; /* no decoration such as bullet points */
+    font-size: 0.6em; /* sized for readability */
+    display: grid; /* they are in a grid */
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-items: center;
-    border: #00274C solid 2px;
-    border-radius: 1em;
+    border: #00274C solid 2px; /* blue = on brand */
+    border-radius: 8px; /* curved corners */
     gap: 15px;
     padding: 10px;
 }
 
-/* Articles for data sections */
+/* data section styling */
 .data {
     margin-bottom: 20px;
 }
 
+/* health building styling */
 .building-image {
-    width: 100%;
+    width: 100%; /* takes up full available width of its parent element */
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* curved corners */
 }
 
+/* caption of the health building styling */
 figcaption {
     font-style: italic;
     color: #000000;
     margin-bottom: 10px;
-    font-size: 0.4em;
+    font-size: 0.4em; /* sized for readability */
 }
 
+/* umsi image styling */
 .umsi-image {
-    width: 100%;
+    width: 100%; /* takes up full available width of its parent element */
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* curved corners */
 }
 
-/* Footer style */
+/* Footer styling */
 .site-footer {
-    background-color: #00274C;
+    background-color: #00274C; /* blue = on brand */
     color: #ffffff;
     text-align: center;
     padding: 30px;
 }
 
 .site-footer a {
-    color: #FFCB05;
+    color: #FFCB05; /* UM maize = on brand */
     text-decoration: none;
 }
 
+ /* when footer link is hovered over it is underlined and bold */
 .site-footer a:hover {
     text-decoration: underline;
     font-weight: bold;
